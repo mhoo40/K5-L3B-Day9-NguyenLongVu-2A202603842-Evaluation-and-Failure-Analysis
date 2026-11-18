@@ -51,6 +51,8 @@ uv pip install -r requirements.txt -r requirements-lab9.txt   # không dùng uv:
 python -m lab9.smoke                    # M0 PASS
 python -m lab9.evalset --build          # sinh eval_set_v1.jsonl + labels_v1.json (nhãn TÁCH khỏi item)
 cd .. && git add -A && git commit -m "chore: build eval set v1"
+python -m lab9.trace_case --shape seeded-regression --claim C-002 --seed 11
+python -m lab9.evalset --check
 ```
 
 Windows (PowerShell), cùng các bước trên:
